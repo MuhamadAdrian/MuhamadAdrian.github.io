@@ -15,7 +15,7 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-@keyframes rotate{
+/*@keyframes rotate{
     0%{
         transform: rotate(0deg);
     }
@@ -45,6 +45,7 @@
         transform: translateY(0px);
     }
 }
+*/
 .square-top{
     transition: transform .7s cubic-bezier(.79,.14,.15,.86);
     transform-origin: left;

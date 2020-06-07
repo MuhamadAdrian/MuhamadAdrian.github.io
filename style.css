@@ -126,53 +126,6 @@ ul.link-box li a{
     background-color: #D4426E;
 }
 
-#img1 img, #img2 img, #img3 img, #img4 img, #img6 img{
-    animation-name: teuDaekCicing;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
-#img5 img, #img7 img, #img8 img{
-    animation-name: teuDaekCicing2;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
-
-#img3 img{
-    animation-name: rotate;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-@keyframes rotate{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
-@keyframes teuDaekCicing2{
-    0%{
-        transform: translateY(0px);
-    }
-    50%{
-        transform: translateY(10px);
-    }
-    100%{
-        transform: translateY(0px);
-    }
-}
-@keyframes teuDaekCicing{
-    0%{
-        transform: translateY(0px);
-    }
-    50%{
-        transform: translateY(20px);
-    }
-    100%{
-        transform: translateY(0px);
-    }
-}
 
 
 .mobile-menu ul.menu{
