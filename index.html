@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhamad Adrian Seftiana | Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./animation.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar flex between">
+            <div class="brand">
+                <a href="" class="flex brand-text"><img src="./img/logo N.png" width="" alt=""><span
+                        class="a">A</span>duka<span>.</span></a>
+            </div>
+            <ul class="link-box flex">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main">
+        <div class="mobile-menu">
+            <div class="fba">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="menu">
+                <li ><a href="#">Home</a></li>
+                <li ><a href="#">Project</a></li>
+                <li ><a href="#">About</a></li>
+            </ul>
+        </div>
+        <div class="banner">
+            <div class="square-top"></div>
+            <div class="square-bottom"></div>
+            <div class="medsos">
+                <div class="">
+
+                </div>
+            </div>
+            <div id="scene">
+                <div class="img-bg" id="img1" data-depth="0.3"><img src="./img/1.png" alt=""></div>
+                <div class="img-bg" id="img2" data-depth="0.5"><img src="./img/2.png" alt=""></div>
+                <div class="img-bg" id="img3" data-depth="0.6"><img src="./img/3.png" alt=""></div>
+                <div class="img-bg" id="img4" data-depth="0.3"><img src="./img/4.png" alt=""></div>
+                <div class="img-bg" id="img5" data-depth="0.7"><img src="./img/5.png" alt=""></div>
+                <div class="img-bg" id="img6" data-depth="0.3"><img src="./img/6.png" alt=""></div>
+                <div class="img-bg" id="img7" data-depth="0.3"><img src="./img/7.png" alt=""></div>
+                <div class="img-bg" id="img8" data-depth="0.8"><img src="./img/8.png" alt=""></div>
+            </div>
+            <div data-depth="0.9" class="text-banner">
+                <h1>UNFORGETABLE</h1>
+                <p>Hai, My Name Is Muhamad Adrian Seftiana
+                    And I From Indonesia</p>
+                <a href="#" class="button">About Me</a>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js" type="module"></script>
+    <script src="./vendor/scroll-out.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+    </script>
+</body>
+
+</html>
