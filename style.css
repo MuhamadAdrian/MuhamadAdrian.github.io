@@ -128,8 +128,47 @@ ul.link-box li a{
 
 
 
-.mobile-menu ul.menu, .mobile-menu .medsos{
+.mobile-menu ul.menu{
     display: none;
+}
+@media only screen and (min-width: 768px){
+    .mobile-menu .medsos{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 0px 10%;
+    }
+    .mobile-menu .medsos .icon{
+        display: flex;
+        align-items: center;
+        margin: 20px;
+        position: relative;
+        padding: 10px;
+        transition: opacity .4s, background-color .4s, padding .4s;
+        border-radius: 3px;
+    }
+    .mobile-menu .medsos .icon svg{
+        width: 20px;
+        fill: white;
+    }
+    .mobile-menu .medsos .icon label{
+        position: absolute;
+        top: 50%;
+        left: 65%;
+        transform: translate(0%, -50%);
+        color: white;
+        font-size: 12px;
+        opacity: 0;
+        transition: opacity .4s, margin .4s;
+    }
+    .mobile-menu .medsos .icon:hover{
+        padding-right: 20px;
+        background-color: #6C4EE2;
+    }
+    .mobile-menu .medsos .icon:hover label{
+        opacity: 1;
+        margin: 0px 5px;
+    }
 }
 
 
@@ -256,6 +295,9 @@ ul.link-box li a{
         opacity: 0;
         transform: translateX(40px);
         transition: transform .3s cubic-bezier(.79,.14,.15,.86), opacity .3s cubic-bezier(.79,.14,.15,.86);
+    }
+    .mobile-menu .medsos .icon label{
+        display: none;
     }
     .mobile-menu .medsos.show .icon{
         transform: translateX(0px);
