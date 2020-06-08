@@ -132,6 +132,7 @@ ul.link-box li a{
     display: none;
 }
 
+
 @media only screen and (max-width: 1111px){
     #scene{
         top: 0%;
@@ -234,6 +235,34 @@ ul.link-box li a{
     }
     .mobile-menu ul.menu li a{
         color: white;
+    }
+
+    .mobile-menu .medsos{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px 20px;
+        border-radius: 25px;
+        background-color: #6C4EE2;
+        z-index: 998;
+        margin: 20px;
+        transition: right .3s ease, opacity .3s ease;
+        box-shadow: 0px 5px 20px rgba(108, 78, 226, 0.281);
+        opacity: 0;
+    }
+    .mobile-menu .medsos .icon{
+        margin: 0px 8px;
+        display: flex;
+    }
+
+    .mobile-menu .medsos .icon svg{
+        width: 12px;
+        fill: white;
+    }
+
+    .mobile-menu .medsos.show{
+        opacity: 1;
+        right: 80px;
     }
 }
 @media only screen and (max-width: 650px){
