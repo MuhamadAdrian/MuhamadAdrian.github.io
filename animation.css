@@ -52,7 +52,7 @@
 
 
 .square-top{
-    transition: transform .7s cubic-bezier(.79,.14,.15,.86);
+    transition: transform 1s cubic-bezier(.79,.14,.15,.86);
     transform-origin: left;
     transform: scaleX(0);
 }
@@ -60,7 +60,7 @@
     transform: scaleX(1);
 }
 .square-bottom{
-    transition: transform .7s cubic-bezier(.79,.14,.15,.86);
+    transition: transform 1s cubic-bezier(.79,.14,.15,.86);
     transform-origin: bottom;
     transform: scaleY(0);
 }
@@ -73,15 +73,18 @@
 }
 h1, p{
     opacity: 0;
-    transform: translateY(40px);
-    transition: transform .8s cubic-bezier(.79,.14,.15,.86), opacity .8s cubic-bezier(.79,.14,.15,.86);
+    transform: translateY(90px);
+    transition: transform 1s cubic-bezier(.79,.14,.15,.86), opacity 1s cubic-bezier(.79,.14,.15,.86);
 }
 h1[data-scroll="in"], p[data-scroll="in"]{
     opacity: 1;
     transform: translateY(0px);
 }
+h1[data-scroll="in"]{
+    transition-delay: 1.2s;
+}
 p[data-scroll="in"]{
-    transition-delay: .8s;
+    transition-delay: 1.6s;
 }
 #scene[data-scroll="in"]{
     opacity: 1;

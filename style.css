@@ -180,9 +180,11 @@ ul.link-box li a{
     }
     .mobile-menu .fba.clicked div:nth-child(1){
         transform: rotate(45deg);
+        transition-delay: .2s;
     }
     .mobile-menu .fba.clicked div:nth-child(3){
         transform: rotate(-45deg);
+        transition-delay: .2s;
     }
     .mobile-menu ul.menu{
         display: flex;
@@ -194,12 +196,13 @@ ul.link-box li a{
         height: 100%;
         top: 0;
         left: 0;
-        background-color: #121212;
+        background-color: #D4426E;
         z-index: 998;
         padding: 0;
+        margin: 0;
         opacity: 0;
         transform: translateY(100%);
-        transition: transform .8s cubic-bezier(.86,0,.07,1), opacity .8s cubic-bezier(.86,0,.07,1);
+        transition: transform .8s cubic-bezier(.79,.14,.15,.86), opacity .8s cubic-bezier(.79,.14,.15,.86);
     }
     .mobile-menu ul.menu.show{
         opacity: 1;
@@ -239,7 +242,14 @@ ul.link-box li a{
     }
 }
 @media only screen and (max-width: 600px){
-
+    .square-top{
+        width: 25px;
+        height: 100px;
+    }
+    .square-bottom{
+        width: 200px;
+        height: 50px;
+    }
     .navbar{
         padding: 10px 5%;
     }
