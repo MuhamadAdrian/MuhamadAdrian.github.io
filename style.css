@@ -79,6 +79,7 @@ ul.link-box li a{
     font-weight: bold;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 .text-banner p{
     width: 500px;
@@ -87,7 +88,7 @@ ul.link-box li a{
     padding: 0;
     text-shadow: 0px 0px 5px #D4426E;
 }
-.text-banner a.button{
+a.button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,7 +104,7 @@ ul.link-box li a{
     border: 2px solid #6C4EE2;
     transition: background-color .3s ease-in-out;
 }
-.text-banner a.button:hover{
+a.button:hover{
     background-color: transparent;
     border: 2px solid #6C4EE2;
     cursor: pointer;
@@ -130,6 +131,88 @@ ul.link-box li a{
 
 .mobile-menu ul.menu{
     display: none;
+}
+
+.aboutme{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 100px 0px;
+}
+.aboutme .desc-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0px 10%;
+}
+.aboutme .desc-box .desc-aboutme, .aboutme .desc-box .desc-familiar{
+    position: relative;
+    width: 50%;
+}
+
+.aboutme .desc-box .desc-aboutme img, .aboutme .desc-box .desc-familiar img{
+    position: relative;
+    
+}
+.aboutme .desc-box .desc-aboutme img{
+    left: -60%;
+    max-width: 1000px;
+    object-position: center;
+    object-fit: cover;
+    opacity: 10%;
+}
+.aboutme .desc-box .desc-familiar img.bg{
+    right: -50%;
+    top: 0;
+    object-position: center;
+    object-fit: cover;
+    max-width: 900px;
+}
+.aboutme .desc-box .desc-aboutme .desc{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 0;
+    color: white;
+    transform: translateY(-50%);
+    padding: 20px;
+}
+.button.button-cnt{
+    margin: 0;
+    
+}
+.aboutme .desc-box .desc-familiar .familiar-box{
+    padding: 20px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.aboutme .desc-box .desc-familiar .familiar-box div.html{
+    position: relative;
+    transform: translate(30%, 84%) rotate(39deg);
+}
+.aboutme .desc-box .desc-familiar .familiar-box div.css{
+    position: relative;
+    transform: translate(100%, 140%) rotate(-27deg);
+}
+.aboutme .desc-box .desc-familiar .familiar-box div.js{
+    position: relative;
+    transform: translate(15%, 85%) rotate(-39deg);
+}
+.aboutme .desc-box .desc-familiar .familiar-box div.ai{
+    position: relative;
+    transform: translate(200%, -140%) rotate(16deg);
+}
+.aboutme .desc-box .desc-familiar .familiar-box div.figma{
+    position: relative;
+    transform: translate(100%, 150%) rotate(23deg);
+}
+img.tools-icon{
+    width: 50px;
 }
 @media only screen and (min-width: 768px){
     .mobile-menu .medsos{
@@ -176,6 +259,15 @@ ul.link-box li a{
 @media only screen and (max-width: 1111px){
     #scene{
         top: 0%;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .aboutme .desc-box{
+        flex-direction: column;
+    }
+    .aboutme .desc-box .desc-aboutme, .aboutme .desc-box .desc-familiar{
+        width: 100%;
     }
 }
 @media only screen and (max-width: 768px){
@@ -376,6 +468,10 @@ ul.link-box li a{
         font-size: 18px;
         color: #D4426E;
     }
+    .aboutme .desc-box{
+        padding: 0px 3%;
+    }
+
 }
 @media only screen and (max-width: 500px){
     .text-banner{
@@ -392,6 +488,28 @@ ul.link-box li a{
     }
     .text-banner a.button{
         padding: 10px 20px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .aboutme .desc-box .desc-familiar .familiar-box div.html{
+        position: relative;
+        transform: translate(0%, 84%) rotate(39deg);
+    }
+    .aboutme .desc-box .desc-familiar .familiar-box div.css{
+        position: relative;
+        transform: translate(70%, 140%) rotate(-27deg);
+    }
+    .aboutme .desc-box .desc-familiar .familiar-box div.js{
+        position: relative;
+        transform: translate(-15%, 85%) rotate(-39deg);
+    }
+    .aboutme .desc-box .desc-familiar .familiar-box div.ai{
+        position: relative;
+        transform: translate(170%, -140%) rotate(16deg);
+    }
+    .aboutme .desc-box .desc-familiar .familiar-box div.figma{
+        position: relative;
+        transform: translate(70%, 150%) rotate(23deg);
     }
 }
 

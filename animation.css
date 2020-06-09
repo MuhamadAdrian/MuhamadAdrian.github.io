@@ -71,23 +71,36 @@
 #scene{
     opacity: 0;
 }
-h1, p{
+.title-banner, .p-banner, .text{
     opacity: 0;
     transform: translateY(90px);
     transition: transform 1s cubic-bezier(.79,.14,.15,.86), opacity 1s cubic-bezier(.79,.14,.15,.86);
 }
-h1[data-scroll="in"], p[data-scroll="in"]{
+.title-banner[data-scroll="in"], .p-banner[data-scroll="in"]{
     opacity: 1;
     transform: translateY(0px);
 }
-h1[data-scroll="in"]{
+.title-banner[data-scroll="in"]{
     transition-delay: 1.2s;
 }
-p[data-scroll="in"]{
+.p-banner[data-scroll="in"]{
     transition-delay: 1.6s;
 }
 #scene[data-scroll="in"]{
     opacity: 1;
+}
+.text[data-scroll="in"]{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.tools-icon{
+    transform: scale(0);
+    transition: transform .4s cubic-bezier(.68,-0.55,.27,1.55);
+
+}
+.tools-icon[data-scroll="in"]{
+    transform: scale(1);
 }
 
 
