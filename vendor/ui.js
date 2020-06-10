@@ -1,5 +1,5 @@
 ScrollOut({
-    targets: '.square-top, .square-bottom, .title-banner, .p-banner, .button, #scene, .text, .tools-icon'
+    targets: '.square-top, .square-bottom, .title-banner, .p-banner, .button, #scene, .text, .tools-icon, .title'
 })
 
 let toggleButton = document.querySelector('.fba');

@@ -190,7 +190,11 @@ a.button:hover{
     transform: translateY(-50%);
     color: white;
 }
-
+.aboutme .desc-box .desc-familiar .familiar-box div img.tools-icon:hover{
+    transform: scale(1.2);
+    transition: transform .3s cubic-bezier(.68,-0.55,.22,2.41);
+    cursor: pointer;
+}
 .aboutme .desc-box .desc-familiar .familiar-box div.html{
     position: relative;
     transform: translate(30%, 84%) rotate(39deg);
@@ -209,11 +213,66 @@ a.button:hover{
 }
 .aboutme .desc-box .desc-familiar .familiar-box div.figma{
     position: relative;
-    transform: translate(100%, 150%) rotate(23deg);
+    transform: translate(60%, 150%) rotate(23deg);
 }
 img.tools-icon{
     width: 50px;
 }
+.percentage-box{
+    position: absolute;
+    background-color: #6C4EE2;
+    border-radius: 5px;
+    padding: 8px 15px;
+    box-sizing: border-box;
+    width: 100%;
+    transform: scale(0);
+    transition: transform .4s cubic-bezier(.68,-0.55,.27,1.55);
+}
+.aboutme .desc-box .desc-familiar .familiar-box div:hover .percentage-box{
+    transform: scale(1);
+}
+.percentage-box p{
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+}
+.percentage-box .percentage{
+    position: relative;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #121212;
+}
+.percentage-box .percentage .value{
+    position: relative;
+    width: 100%;
+    height: 3px;
+    background-color: #D4426E;
+    border-radius: 5px;
+}
+.percentage-box .percentage .value::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background-color: #60E5A5;
+}
+.percentage-box .percentage .value.value-html::before{
+    width: 93%;
+}
+.percentage-box .percentage .value.value-css::before{
+    width: 93%;
+}
+.percentage-box .percentage .value.value-js::before{
+    width: 40%;
+}
+.percentage-box .percentage .value.value-ai::before{
+    width: 75%;
+}
+.percentage-box .percentage .value.value-figma::before{
+    width: 70%;
+}
+
 @media only screen and (min-width: 768px){
     .mobile-menu .medsos{
         position: absolute;
