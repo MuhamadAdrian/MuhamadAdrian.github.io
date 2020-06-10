@@ -187,6 +187,7 @@ a.button:hover{
     position: absolute;
     display: block;
     top: 50%;
+    left: 20%;
     transform: translateY(-50%);
     color: white;
 }
@@ -227,6 +228,9 @@ img.tools-icon{
     width: 100%;
     transform: scale(0);
     transition: transform .4s cubic-bezier(.68,-0.55,.27,1.55);
+}
+.aboutme .desc-box .desc-familiar .familiar-box div:hover{
+    cursor: pointer;
 }
 .aboutme .desc-box .desc-familiar .familiar-box div:hover .percentage-box{
     transform: scale(1);
@@ -480,6 +484,9 @@ img.tools-icon{
         opacity: 1;
         right: 80px;
     }
+    .aboutme .desc-box .desc-familiar .familiar-box{
+        left: 10%;
+    }
 }
 @media only screen and (max-width: 650px){
     .img-bg img{
@@ -547,6 +554,9 @@ img.tools-icon{
     }
     .text-banner a.button{
         padding: 10px 20px;
+    }
+    .aboutme .desc-box .desc-familiar .familiar-box{
+        left: 0;
     }
 }
 @media only screen and (max-width: 400px){
