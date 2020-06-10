@@ -121,11 +121,12 @@
     background-color: transparent;
     box-shadow: 0px 0px 0px 5px #6C4EE2;
     z-index: -1;
+    transform: rotate(0) scale(0);
     transition: transform .3s ease;
 }
 .title[data-scroll="in"]::before{
-    transition-delay: 1s;
-    transform: rotate(45deg);
+    transition-delay: .6s;
+    transform: rotate(135deg) scale(1);
 }
 .title::after{
     content: '';
