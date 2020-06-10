@@ -1,1 +1,1 @@
-import './vendor/ui.js';
+import './vendor/ui.js'
