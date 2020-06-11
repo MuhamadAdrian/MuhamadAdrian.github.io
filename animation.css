@@ -68,9 +68,7 @@
     transition-delay: .5s;
     transform: scaleY(1);
 }
-#scene{
-    opacity: 0;
-}
+
 .title-banner, .p-banner, .text{
     opacity: 0;
     transform: translateY(90px);
@@ -85,9 +83,6 @@
 }
 .p-banner[data-scroll="in"]{
     transition-delay: 1.6s;
-}
-#scene[data-scroll="in"]{
-    opacity: 1;
 }
 .text[data-scroll="in"]{
     opacity: 1;

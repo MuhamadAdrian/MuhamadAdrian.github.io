@@ -91,11 +91,11 @@
             <div data-depth="0.9" class="text-banner">
                 <h1 class="title-banner">MOTIVATION</h1>
                 <p class="p-banner">It is a word that is always present in us, whether we give to them, or we receive</p>
-                <a href="#" class="button">About Me</a>
+                <a href="#about" class="button">About Me</a>
             </div>
         </section>
 
-        <section class="aboutme">
+        <section id="about" class="aboutme">
             <div class="desc-box">
                 <div class="desc-aboutme">
                     <img src="./img/my.webp" alt="">
@@ -169,7 +169,10 @@
     <script src="./vendor/parallax.min.js"></script>
     <script>
         var scene = document.getElementById('scene');
-        var parallaxInstance = new Parallax(scene);
+        var parallaxInstance = new Parallax(scene, {
+            hoverOnly: true
+            
+        });
     </script>
 </body>
 

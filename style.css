@@ -1,5 +1,7 @@
 
-
+html{
+    scroll-behavior: smooth;
+}
 *{
     list-style-type: none;
     text-decoration: none;
