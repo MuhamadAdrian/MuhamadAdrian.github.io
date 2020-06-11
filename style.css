@@ -9,7 +9,7 @@ body{
     margin: 0;
     top: 0;
     left: 0;
-    background-color: #121212;
+    background-color: #0e0e0e;
     font-family: 'Poppins', sans-serif;
 }
 .between{
@@ -160,7 +160,7 @@ a.button:hover{
     max-width: 1000px;
     object-position: center;
     object-fit: cover;
-    opacity: 10%;
+    opacity: 15%;
 }
 .aboutme .desc-box .desc-familiar img.bg{
     right: -50%;
@@ -178,9 +178,24 @@ a.button:hover{
     transform: translateY(-50%);
     padding: 20px;
 }
+.aboutme .desc-box .desc-aboutme .desc .title.about{
+    margin-bottom: 10px;
+}
+.aboutme .desc-box .desc-aboutme .desc p.text{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6rem;
+    margin-bottom: 30px;
+}
 .button.button-cnt{
-    margin: 0;
-    
+    display: inline;
+    margin-right: 7px;
+}
+.button.button-more{
+    background-color: #D4426E;
+    display: inline;
+    border-color: #D4426E;
+    box-shadow: 0px 0px 10px rgba(212, 66, 110, 0.336);
 }
 .aboutme .desc-box .desc-familiar .familiar-box{
     padding: 20px;
